@@ -1,0 +1,86 @@
+@import "reset";
+@import "varibales";
+@import "minxins";
+
+
+// Start Navbar.
+#main-nav{
+    background: $deepBlue;
+    ul{
+        width: 100%;
+        @include clearFix;
+    }
+    li{
+        float: left;
+        width: (100% / 6);
+        @include mQ(600px) {
+            width: 100%;
+        }
+    }
+    a{
+        color:$offWhite ;
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        text-align: center;
+        &:hover{
+            background: lighten($deepBlue, 6);
+        }
+    }
+}
+
+// Start Lead banner.
+.lead-banner{
+    @include banner;
+    text-align: right;
+}
+
+section h1{
+    font-size: $sectionHeding;
+    color: $deepBlue;
+}
+
+// Start Section Services.
+#services{
+    margin-bottom: 60px;
+    li{
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        width: (100% / 3);
+    }
+    img{
+        width: 60%;
+        margin: 20px 20%;
+    }
+    a{
+        text-decoration: none;
+        color: $deepBlue;
+        font-weight: bold;
+        &:hover{
+            color: complement($deepBlue);
+        }
+    }
+    ul{
+        @include clearFix;
+    }
+}
+
+// Start lessons banner.
+.lessons-banner{
+    @include banner;
+    li{
+        text-transform: uppercase;
+        font-size: 20px;
+        max-width: 500px;
+        margin: 60px 0;
+    }
+}
+
+// Start Section Images.
+#projects li{
+    @include grid(4, 2%);
+    img{
+        width: 100%;
+    }
+}
