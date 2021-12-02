@@ -93,6 +93,7 @@ li {
 section h1 {
   font-size: 24px;
   color: #032f3e;
+  margin-top: 10px;
 }
 
 #services {
@@ -158,15 +159,15 @@ section h1 {
   margin: 60px 0;
 }
 
-#projects li {
+#Categories li {
   float: left;
   margin-right: 2%;
   margin-bottom: 2%;
   width: 23.5%;
 }
-#projects li:nth-child(4n) {
+#Categories li:nth-child(4n) {
   margin-right: 0;
 }
-#projects li img {
+#Categories li img {
   width: 100%;
 }

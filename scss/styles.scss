@@ -38,6 +38,7 @@
 section h1{
     font-size: $sectionHeding;
     color: $deepBlue;
+    margin-top: 10px;
 }
 
 // Start Section Services.
@@ -78,7 +79,7 @@ section h1{
 }
 
 // Start Section Images.
-#projects li{
+#Categories li{
     @include grid(4, 2%);
     img{
         width: 100%;
